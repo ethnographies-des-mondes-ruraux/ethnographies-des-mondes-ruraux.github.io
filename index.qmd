@@ -10,6 +10,8 @@ execute:
 googlesheets4::gs4_deauth()
 "1IQF-y-Kvl8PjXwvFYKls4V8sPf_oeiLS9WGElNwkmGo" |> 
   googlesheets4::read_sheet() |> 
+  dplyr::group_by(ville) |> 
+  dplyr::summarise(nom = paste0(nom, collapse = ", ")) |> 
   tidygeocoder::geocode(ville) |> 
   leaflet::leaflet() |> 
   leaflet::addTiles() |> 
