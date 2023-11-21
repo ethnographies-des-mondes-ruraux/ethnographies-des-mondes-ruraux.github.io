@@ -4,10 +4,11 @@ project:
 
 website:
   title: "Ethnographies des mondes ruraux"
+  site-url: "https://ethnographies-des-mondes-ruraux.github.io/"
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Accueil
       - about.qmd
 
 format:

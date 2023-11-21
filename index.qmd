@@ -2,7 +2,6 @@
 title: "Ethnographies des mondes ruraux"
 ---
 
-
 ```{r}
 googlesheets4::gs4_deauth()
 "1IQF-y-Kvl8PjXwvFYKls4V8sPf_oeiLS9WGElNwkmGo" |> 
