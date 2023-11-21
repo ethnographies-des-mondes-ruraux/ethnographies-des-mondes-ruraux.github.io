@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ethnographies des mondes ruraux",
-    "section": "",
-    "text": "googlesheets4::gs4_deauth()\n\"1IQF-y-Kvl8PjXwvFYKls4V8sPf_oeiLS9WGElNwkmGo\" |&gt; \n  googlesheets4::read_sheet() |&gt; \n  tidygeocoder::geocode(ville) |&gt; \n  leaflet::leaflet() |&gt; \n  leaflet::addTiles() |&gt; \n  leaflet::addMarkers(~long, ~lat, popup = ~nom)\n\n✔ Reading from \"terrains\".\n\n\n✔ Range 'Feuille 1'.\n\n\nPassing 6 addresses to the Nominatim single address geocoder\n\n\nQuery completed in: 6 seconds"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "À propos",

@@ -1,5 +1,9 @@
 ---
 title: "Ethnographies des mondes ruraux"
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
 
 ```{r}
