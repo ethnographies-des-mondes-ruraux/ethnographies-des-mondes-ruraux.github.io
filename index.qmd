@@ -2,6 +2,15 @@
 title: "Ethnographies des mondes ruraux"
 ---
 
-This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+```{r}
+googlesheets4::gs4_deauth()
+"1IQF-y-Kvl8PjXwvFYKls4V8sPf_oeiLS9WGElNwkmGo" |> 
+  googlesheets4::read_sheet() |> 
+  tidygeocoder::geocode(ville) |> 
+  leaflet::leaflet() |> 
+  leaflet::addTiles() |> 
+  leaflet::addMarkers(~long, ~lat, popup = ~nom)
+
+```
+
